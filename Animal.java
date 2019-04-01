@@ -30,18 +30,18 @@ import java.util.*;
  * --Privados--
  *  .
  *  .
- * @author (Alex) 
+ * @author (Sergio) 
  * @version (fecha)
  */
 public abstract class Animal {
 
     //----------------------------Constantes--------------------------------
-    protected static final Random generador = Randomizer.getRandom(); // Número aleatorio para gestionar la reproducción
+    protected static final Random generador = Randomizer.getRandom(); // NÃºmero aleatorio para gestionar la reproducciÃ³n
 
     //----------------------------Campos------------------------------------
-    private boolean vive;       // Indica si el conejo está vivo o no
-    private Location posicion;  // La posición del conejo dentro del campo
-    private Field campo;        // El campo donde se desarrolla la simulación
+    private boolean vive;       // Indica si el conejo estÃ¡ vivo o no
+    private Location posicion;  // La posiciÃ³n del conejo dentro del campo
+    private Field campo;        // El campo donde se desarrolla la simulaciÃ³n
     private int edad;			// La edad del animal
 
     //----------------------------Constructores-----------------------------
@@ -62,8 +62,8 @@ public abstract class Animal {
     //                            *Consulta*
 
     /**
-     * Comprueba si el animal está vivo o muerto
-     * @return true si está vivo
+     * Comprueba si el animal estÃ¡ vivo o muerto
+     * @return true si estÃ¡ vivo
      */
     public boolean estaVivo()
     {
@@ -71,8 +71,8 @@ public abstract class Animal {
     }
 
     /**
-     * Devuelve la posición del conejo
-     * @return La posición del conejo
+     * Devuelve la posiciÃ³n del conejo
+     * @return La posiciÃ³n del conejo
      */
     public Location getPosicion()
     {
@@ -116,9 +116,9 @@ public abstract class Animal {
     }
 
     /**
-     * Genera un número al azar que representa el número de nacimientos
+     * Genera un nÃºmero al azar que representa el nÃºmero de nacimientos
      * Eso si el conejo se puede reproducir
-     * @return El número de nacimientos (puede ser 0).
+     * @return El nÃºmero de nacimientos (puede ser 0).
      */
     protected int reproducir()
     {
@@ -130,7 +130,7 @@ public abstract class Animal {
     }
 
     /**
-     * El animal ha llegado a su máximo de edad y muere
+     * El animal ha llegado a su mÃ¡ximo de edad y muere
      * Se elimina del campo
      */
     public void setMuerto()
@@ -138,14 +138,14 @@ public abstract class Animal {
         vive = false;
         if(posicion != null) {
             campo.clear(posicion);
-            posicion = null;        // Y así el objeto puede ser liberado
+            posicion = null;        // Y asÃ­ el objeto puede ser liberado
             campo = null;           // por el recolector de basura
         }
     }
 
     /**
-     * Coloca al animal en una nueva posición del campo actual
-     * @param nuevaPosicion La nueva posición del animal
+     * Coloca al animal en una nueva posiciÃ³n del campo actual
+     * @param nuevaPosicion La nueva posiciÃ³n del animal
      */
     protected void setPosicion(Location nuevaPosicion)
     {
