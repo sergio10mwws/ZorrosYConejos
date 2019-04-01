@@ -1,8 +1,6 @@
 Project:    ZorrosYConejos
-Autor:      Apah
-Asunto:     Es una adaptación (traducción) del proyecto del Libro
+Autor:      sergio10mw
+Asunto:     Es una adaptaciÃ³n (traducciÃ³n) del proyecto del Libro
 
-Es una simulación de predadro - presa, en este caso son zorros y conejos.
-
-En esta versión no se usa herencia
+Es una simulaciÃ³n de predadro - presa, en este caso son zorros y conejos.
 
